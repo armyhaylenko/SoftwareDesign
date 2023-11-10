@@ -16,4 +16,9 @@ Describes the process of voting with appropriate Inputs, Controls, Outputs, and 
 
 ![IDEF0 Diagram](diagrams/e_voting_idef0.svg)
 
+### DFD Diagram
 
+Describes the data flows between the Elections Blockchain & the Government DB, the entities involved
+and the processes.
+
+![DFD Diagram](diagrams/dfd.svg)
