@@ -22,3 +22,22 @@ Describes the data flows between the Elections Blockchain & the Government DB, t
 and the processes.
 
 ![DFD Diagram](diagrams/dfd.svg)
+
+## Sprint 3: UML
+
+### UML Class diagram
+
+Describes user classes & type definitions.
+
+![UML Class](diagrams/e_voting_uml_class.svg)
+
+### UML Activity diagram
+
+Describes sample user voting flow.
+![UML Activity](diagrams/e_voting_uml_activity.svg)
+
+### UML Sequence diagram
+
+Describes the whole election setup, voting, and result & audit compilation flow.
+
+![UML Sequence](diagrams/e_voting_uml_sequence.svg)
