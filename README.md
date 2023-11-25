@@ -41,3 +41,16 @@ Describes sample user voting flow.
 Describes the whole election setup, voting, and result & audit compilation flow.
 
 ![UML Sequence](diagrams/e_voting_uml_sequence.svg)
+
+### UML State chart
+
+Describes the state of the system with the full flow of elections process.
+
+![UML State](diagrams/e_voting_uml_state.svg)
+
+### UML Component diagram
+
+Describes provided & required interfaces of the blockchain components with an
+inner component.
+
+![UML Component](diagrams/e_voting_uml_component.svg)
