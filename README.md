@@ -359,3 +359,9 @@ The Voting Module component requires the View Permissions interface to decide on
 of its received transactions. By checking permissions, the Voting Module is able to provide
 and interface of Voting and Elections Management.
 
+## Sprint 4: Archimate
+
+Describes the system from the business level, the application level, and the technology
+level.
+
+![Archimate diagram](diagrams/e_voting_archimate.jpg)
