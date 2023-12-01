@@ -2,7 +2,7 @@
 
 ---
 
-## Sprint 1: SRS, Use Case, BPMN
+## Requirements & Use Case
 
 Link to SRS: https://docs.google.com/document/d/1gYbN96vcs3UZMZKSuCpEqW2v-FJG7cg30J7fT9gVnac
 Use Case diagram for the E-Voting system: ![Use Case](diagrams/e_voting_use_case.png)
@@ -79,7 +79,7 @@ based on the collected information.
 
 BPMN Diagram: TODO
 
-## Sprint 2: IDEF0, DFD
+## Logical & Data View
 
 ### IDEF0 Diagram
 
@@ -155,8 +155,6 @@ that the voting process and candidate information are securely and accurately re
 benefiting from the distributed ledger's attributes while being managed in a centralized
 manner for added control and oversight.
 
-## Sprint 3: UML
-
 ### UML Class diagram
 
 Describes user classes & type definitions.
@@ -207,6 +205,8 @@ Brief Description: Representing the results of voting transactions, the VoteResu
 class contains attributes to detail the election (electionId), the candidate
 (candidateId), and whether the results are finalized (finalized). This class is crucial, 
 providing a clear and immutable record of each vote's outcome.
+
+## Process View
 
 ### UML Activity diagram
 
@@ -359,7 +359,7 @@ The Voting Module component requires the View Permissions interface to decide on
 of its received transactions. By checking permissions, the Voting Module is able to provide
 and interface of Voting and Elections Management.
 
-## Sprint 4: Archimate
+## Combined View
 
 Describes the system from the business level, the application level, and the technology
 level.
