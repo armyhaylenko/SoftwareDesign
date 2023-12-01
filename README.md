@@ -359,7 +359,7 @@ The Voting Module component requires the View Permissions interface to decide on
 of its received transactions. By checking permissions, the Voting Module is able to provide
 and interface of Voting and Elections Management.
 
-## Combined View
+## Business, Application, Technology View
 
 Describes the system from the business level, the application level, and the technology
 level.
