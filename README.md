@@ -77,7 +77,52 @@ traces, collect valuable system metrics from the gathered data, and prevent secu
 based on the collected information.
 
 
-BPMN Diagram: TODO
+### BPMN View:
+
+![BPMN Diagram](diagrams/e_voting_bpmn.png)
+
+**Election Process Initiation**
+
+Brief Description: The process begins with the initiation phase, where the foundational
+aspects of the election are confirmed. This involves validating the election schedule
+against established criteria to ensure compliance with legal and procedural requirements.
+If validated successfully, the process proceeds to establish the election framework, which
+includes setting protocols and finalizing the election schedule.
+
+**Voter List Preparation**
+
+Brief Description: Following the establishment of the election framework, system
+administrators undertake the task of preparing the voter list. This crucial phase
+involves compiling and verifying the list of eligible voters, ensuring the integrity of
+the election by allowing only authorized individuals to participate. This phase concludes
+with a scheduled waiting period, symbolized by an intermediate timer event, leading up to
+the start of the voting process.
+
+**Voting Process Execution**
+
+Brief Description: This central part of the E-Voting system is where eligible voters
+engage in the electoral process. Upon the commencement of the voting period, voters
+authenticate themselves within the system, browse candidate profiles, make their 
+selections, and cast their votes. The system securely records these votes and, at the end
+of the voting period, enables voters to review their ballots and the overall voting results.
+
+**Concurrent System Monitoring and Auditing**
+
+Brief Description: In parallel with the voting process, system administrators carry out
+continuous monitoring and conduct comprehensive audits to ensure the security and proper
+functioning of the E-Voting system. These activities are crucial for safeguarding the
+process against any irregularities or security breaches, thereby upholding the reliability
+and trustworthiness of the election.
+
+**Post-Voting Analysis and Reporting**
+
+Brief Description: After voting concludes, the system administrators tally the votes and
+calculate the candidate ratings. The election's outcome is then subject to an audit,
+which serves as a decision point for the election's validity. If the audit is passed,
+the process moves into the analysis and reporting phase, where detailed insights into
+the election results are generated, concluding with the formal completion of the election
+process. In the event of an audit failure, the process transitions to a state of failure,
+indicating the need for further investigation or remedial action.
 
 ## Logical & Data View
 
@@ -365,3 +410,43 @@ Describes the system from the business level, the application level, and the tec
 level.
 
 ![Archimate diagram](diagrams/e_voting_archimate.jpg)
+
+
+**Election Management System Integration**
+
+Brief Description: This component serves as the central hub for integrating various
+election-related modules. It oversees the orchestration of voter profiles, election data,
+and vote records, ensuring cohesive operation between the voting application component and
+the authentication service component. It acts as the backbone that enables a seamless
+interface for both voters and administrators.
+
+**Voting Application and Authentication Components**
+
+Brief Description: The voting application component is where voters interact with the
+system to cast their votes. It integrates closely with the authentication service component,
+which verifies voter identities to prevent unauthorized access and ensures the legitimacy
+of each vote. This system is crucial for maintaining the security and integrity of
+the e-voting process.
+
+**User Role Management and Workflow**
+
+Brief Description: Within the system, distinct roles such as Voter, Candidate,
+Voting Administrator, and System Administrator are defined. Each role has specific
+workflows: Voters cast votes, Candidates participate in elections, Voting Administrators
+manage the voting process, and System Administrators oversee the entire electronic
+system's integrity and functionality.
+
+**Election Process Execution**
+
+Brief Description: This involves several key stages, including Vote Casting,
+Election Setup, Result Compilation, and Voter Verification. These stages ensure a
+structured election process, from setting up election parameters to casting and
+compiling votes, and finally, verifying voter eligibility and authenticating results.
+
+**System Services and Administration**
+
+Brief Description: The system provides specialized services such as E-Voting, Voter Registration, and Election Reporting. These are managed by the Voting Administration, User Management, and Security Management modules, respectively, to facilitate a secure and user-friendly e-voting experience.
+
+**Infrastructure Foundation**
+
+Brief Description: At the foundational level, the system's infrastructure consists of an Application Gateway, which serves as the entry point for all traffic, directing it to the appropriate network nodes and software systems, thus ensuring a streamlined flow of data and maintaining the system's robust architecture.
